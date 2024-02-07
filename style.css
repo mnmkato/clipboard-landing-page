@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root{
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+body{
+    
+    font-family: 'Bai Jamjuree';
+    margin: 0;
+}
+.container{
+    font-size: 18px;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 4rem;
+}
+.logo{
+    height: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+h1{
+    margin: 0;
+}
+p{
+    color: var(--GrayishBlue);
+}
+.top-buttons{
+    margin-top: 2rem;
+    margin-bottom: 9rem;
+}
+.download-buttons{
+    width: 100%;
+}
+.download-buttons>button{
+    border: none;
+    border-radius: 2rem;
+    padding: 1.2rem 5rem;
+    color: #fff;
+    margin: 1rem;
+    width: 100%;
+    font-size: 18px;
+}
+.ios-button{
+    background-color: var(--StrongCyan);
+    box-shadow: 2px 2px 2px 2px hsl(171, 63%, 43%);
+}
+.mac-button{
+    background-color: var(--LightBlue);
+    box-shadow: 2px 2px 2px 2px hsl(233, 63%, 60%);
+}
+h2,h1{
+    color: var(--DarkGrayishBlue);
+}
+.image-computer{
+    width: 100%;
+    margin: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.features>p{
+    margin-bottom: 4rem;
+}
+.image-devices{
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.options{
+    padding-top: 2rem;
+}
+.options img{
+    margin: 2rem;
+    height: 40px;
+}
+.logos{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+.logos>img{
+    scale: 0.8;
+    margin: 1rem;
+}
+.download-buttons, .features-div, .options, .logos, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos>img{
+    margin: 1rem;
+}
+footer{
+    background-color: #f5f6f8;
+    width: 100%;
+    padding:2rem 1rem;
+    margin-top: 7rem;
+    text-align: center;
+}
+.footer-logo{
+    width: 3rem;
+    margin: 1rem;
+}
+nav{
+    display: grid;
+}
+nav>a{
+    text-decoration: none;
+    margin: 1rem;
+    color: var(--DarkGrayishBlue);
+}
+.social-div>img{
+    margin: 1rem;
+}
+@media only screen and (min-width:475px){
+    .container>p{
+        width: 47%;
+    }
+    .download-buttons>button{
+        width: 15rem;
+        padding: 1.2rem 2rem;
+    }
+    .download-buttons,.features-div,.options, .logos, footer{
+        flex-direction: row;
+    }
+    .image-computer{
+        width: 50%;
+        margin-right: 6rem;
+    }
+    .features{
+        text-align: left;
+        width: 27%;
+    }
+    .image-devices{
+        width: 60%;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+    .options{
+        width: 70%;
+    }
+    .options>div{
+        margin: 1rem;
+    }
+    footer{
+        justify-content: space-around;
+    }
+    nav{
+        text-align: left;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav>a:last-child{
+        grid-area: 1/3/2/4;
+    }
+}
